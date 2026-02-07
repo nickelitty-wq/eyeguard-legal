@@ -1,17 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EyeGuard</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-dark: #020617;
+      --surface: #020617;
+      --primary: #38bdf8;
+      --primary-dark: #0284c7;
+      --text: #f8fafc;
+      --text-secondary: #cbd5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, var(--bg), var(--bg-dark));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 820px;
+      background: rgba(2, 6, 23, 0.95);
+      border-radius: 20px;
+      padding: 32px 28px 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 10px 18px;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: rgba(56, 189, 248, 0.25);
+      outline: none;
+    }
+
+    main {
+      margin-top: 40px;
+      line-height: 1.7;
+    }
+
+    section {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      background: rgba(56, 189, 248, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>EyeGuard Screen Breaker</h1>
+  <div class="container">
 
-  <p>Welcome to EyeGuard.</p>
+    <header>
+      <div class="logo">EG</div>
+      <h1>EyeGuard Screen Breaker</h1>
+      <p class="subtitle">Healthy Screen Habits for Your Eyes</p>
 
-  <p>
-    <a href="privacy.html">Privacy Policy</a><br>
-    <a href="terms.html">Terms of Service</a>
-  </p>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </header>
 
+    <main>
+
+      <section>
+        <h2>About EyeGuard</h2>
+        <p>
+          EyeGuard helps reduce eye strain by reminding you to take regular breaks
+          using the 20-20-20 rule and guided eye exercises.
+        </p>
+
+        <div class="highlight">
+          Take a break every 20 minutes, look 20 feet away, for 20 seconds.
+        </div>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Custom break timers</li>
+          <li>Streak tracking</li>
+          <li>Break history</li>
+          <li>Eye exercises</li>
+          <li>Local data storage</li>
+          <li>Optional premium features</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Support</h2>
+        <p>Need help or have feedback?</p>
+
+        <div class="highlight">
+          eyeguardhelp@gmail.com
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        © 2026 EyeGuard •
+        <a href="mailto:eyeguardhelp@gmail.com">eyeguardhelp@gmail.com</a>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
